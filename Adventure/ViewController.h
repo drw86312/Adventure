@@ -11,5 +11,10 @@
 @interface ViewController : UIViewController
 
 
+@property (strong, nonatomic) NSString *name;
+
+- (IBAction)ryanButton:(id)sender;
+- (IBAction)tomButton:(id)sender;
+
 
 @end

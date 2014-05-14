@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ryan wakes up in the Mobile Maker space surrounded by empty pizza boxes." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Gx2-KD-Qe0">
-                                <rect key="frame" x="32" y="12" width="260" height="183"/>
+                                <rect key="frame" x="15" y="56" width="288" height="183"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.64999999999999969" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpl-Dk-bve">
-                                <rect key="frame" x="70" y="203" width="181" height="30"/>
+                                <rect key="frame" x="70" y="214" width="181" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -49,7 +49,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pizza" translatesAutoresizingMaskIntoConstraints="NO" id="JPe-hO-mma">
-                                <rect key="frame" x="15" y="231" width="288" height="161"/>
+                                <rect key="frame" x="15" y="239" width="288" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="272" translatesAutoresizingMaskIntoConstraints="NO" id="DIa-Pp-Ujb">
@@ -60,11 +60,39 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Ryan's Prior Fate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaD-UB-L9V">
-                                <rect key="frame" x="18" y="440" width="178" height="21"/>
+                                <rect key="frame" x="18" y="442" width="178" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdT-ze-HTt">
+                                <rect key="frame" x="197" y="83" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Tom">
+                                    <color key="titleColor" red="0.030564221459999999" green="0.51029636550000002" blue="0.052083649429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tomButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VoI-fX-BgE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Play as" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVu-1B-Gqy">
+                                <rect key="frame" x="135" y="72" width="56" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zs5-Ta-qZo">
+                                <rect key="frame" x="64" y="83" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Ryan">
+                                    <color key="titleColor" red="0.030564221459999999" green="0.51029636550000002" blue="0.052083649429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ryanButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UrJ-ZI-TEz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52566011999999995" green="0.89129035300000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -73,7 +101,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="7SW-LO-hem"/>
                     <connections>
+                        <outlet property="fateTextView" destination="oaD-UB-L9V" id="w83-KK-xMK"/>
                         <outlet property="finalLabel" destination="DIa-Pp-Ujb" id="Aho-kS-dM5"/>
+                        <outlet property="initialSceneTextView" destination="Gx2-KD-Qe0" id="Ofx-lK-WZ3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -180,6 +210,9 @@
                         <color key="backgroundColor" red="0.35921070869999999" green="0.87633991330000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="g7M-b6-N79"/>
+                    <connections>
+                        <outlet property="lotteryLabel" destination="92O-Es-ICD" id="UY8-Fa-59Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9JF-lo-8Pn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

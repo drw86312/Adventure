@@ -23,6 +23,7 @@
 		0E08B05C19229F0200110404 /* AdventureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E08B05B19229F0200110404 /* AdventureTests.m */; };
 		0E08B0661922A2D800110404 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E08B0651922A2D800110404 /* CheckMate.framework */; };
 		0E08B06B1922C68000110404 /* StoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E08B06A1922C68000110404 /* StoryViewController.m */; };
+		0E08B0711922F87600110404 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E08B0701922F87600110404 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		0E08B0651922A2D800110404 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CheckMate.framework; path = ../CheckMate.framework; sourceTree = "<group>"; };
 		0E08B0671922AFD400110404 /* StoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryViewController.h; sourceTree = "<group>"; };
 		0E08B06A1922C68000110404 /* StoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryViewController.m; sourceTree = "<group>"; };
+		0E08B06F1922F87600110404 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		0E08B0701922F87600110404 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				0E08B03F19229F0200110404 /* AppDelegate.h */,
 				0E08B04019229F0200110404 /* AppDelegate.m */,
 				0E08B04219229F0200110404 /* Main.storyboard */,
+				0E08B06F1922F87600110404 /* Player.h */,
+				0E08B0701922F87600110404 /* Player.m */,
 				0E08B0671922AFD400110404 /* StoryViewController.h */,
 				0E08B06A1922C68000110404 /* StoryViewController.m */,
 				0E08B04519229F0200110404 /* ViewController.h */,
@@ -262,6 +267,7 @@
 				0E08B04719229F0200110404 /* ViewController.m in Sources */,
 				0E08B04119229F0200110404 /* AppDelegate.m in Sources */,
 				0E08B03D19229F0200110404 /* main.m in Sources */,
+				0E08B0711922F87600110404 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

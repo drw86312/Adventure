@@ -10,6 +10,8 @@
 
 @interface StoryViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *finalLabel;
+@property (weak, nonatomic) IBOutlet UITextView *lotteryLabel;
+
 
 @end
 
@@ -27,7 +29,12 @@
 
     [nextViewController.navigationItem setTitle:sender.currentTitle];
 
+//    self.lotteryLabel.text = [NSString stringWithFormat:@"As %@ walks to the dumpster with the empty pizza boxes, he stumbles upon a crumpled lottery ticket and picks it up. Hoping it's his lucky day, he heads to the local lottery office, but he must choose a route.", ];
+
 }
+
+
+
 
 
 
