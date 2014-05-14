@@ -7,23 +7,58 @@
 //
 
 #import "ViewController.h"
+#import "StoryViewController.h"
+
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *finalLabel;
+
+
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    UIViewController *nextViewController = segue.destinationViewController;
+
+    [nextViewController.navigationItem setTitle:sender.currentTitle];
+
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)unwindFromStoryViewController:(UIStoryboardSegue *)segue
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    self.finalLabel.text = [[segue.sourceViewController endingText] text];
+    
 }
+
+- (IBAction)unwindFromStoryViewController2:(UIStoryboardSegue *)segue
+{
+    self.finalLabel.text = [[segue.sourceViewController endingText2] text];
+
+}
+
+- (IBAction)unwindFromStoryViewController3:(UIStoryboardSegue *)segue
+{
+    self.finalLabel.text = [[segue.sourceViewController endingText3] text];
+
+}
+
+- (IBAction)unwindFromStoryViewController4:(UIStoryboardSegue *)segue
+{
+    self.finalLabel.text = [[segue.sourceViewController endingText4] text];
+
+}
+
+
+
+
+
+
+
+
+
 
 @end
